@@ -1,5 +1,5 @@
 ## Description of the problem:
-Test
+Application 1124 
 The banking application is designed to provide customers with convenient and secure access to their bank accounts, allowing them to perform various banking transactions. It also provides bank employees with tools to manage and monitor customer accounts effectively.
 
 The problem at hand is to develop a robust and user-friendly banking application that meets the needs of both customers and bank employees. The application should allow customers to perform essential tasks such as opening a new bank account, depositing and withdrawing funds, and checking their account balances. It should also enable bank employees to view and manage customer accounts efficiently.
@@ -9,7 +9,8 @@ To address this problem, the application needs to have features such as account 
 By providing a seamless and intuitive banking experience for customers and empowering bank employees with the necessary tools, the application aims to streamline banking operations, enhance customer satisfaction, and improve overall efficiency in managing bank accounts.
 
 ## User stories:
-
+### 01 
+Create a simple application with Spring Web dependency and test adding gradle.properties file 
 ### Open Account
    - As a customer, I want to be able to open a new bank account.
    - Constraints: 
