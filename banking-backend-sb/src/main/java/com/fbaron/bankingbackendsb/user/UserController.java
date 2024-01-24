@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("api/v1/users")
@@ -17,6 +18,8 @@ public class UserController {
     // Create user
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
+        if (Objects.isNull(user.username) || Objects.isNull(user.password) || user.username.isBlank() || user.password.isBlank())
+            return ResponseEntity.badRequest().build();
         users.put(user.username, user);
         return ResponseEntity.created(null).body(user);
     }

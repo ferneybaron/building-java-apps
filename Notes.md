@@ -41,3 +41,12 @@ Used in conjunction with the multipart/form-data content type to extract parts o
 public ResponseEntity<String> uploadAvatar(@RequestPart("avatar") MultipartFile avatar) {
 // Implementation`
 }
+=======================================================================
+# Objects.isNull
+In Java, the Objects.isNull method is a static method introduced in the java.util package (starting from Java 7) to check whether an object reference is null or not. 
+# isEmpty
+Its method in String class, checks if the length of the string is 0.If you want to check if a string is empty and don't care about white spaces, use isEmpty()
+# isBlank
+isBlank() is a method introduced in Java 11 in the String class.It checks if the string is empty or contains only white spaces (spaces, tabs, or line breaks).
+
+**Note:** Before using isBlank(), ensure that your codebase is compatible with Java 11 or later, as this method was introduced in Java 11. If you're working with an older version of Java, you can use trim().isEmpty() to achieve similar functionality.
