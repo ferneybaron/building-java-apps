@@ -1,4 +1,6 @@
-package com.fbaron.bankingbackendsb.user;
+package com.fbaron.bankingbackendsb.user.data;
+
+import com.fbaron.bankingbackendsb.user.business.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,9 +9,9 @@ import java.util.Optional;
 public class UserDAO {
     Map<String, User> users = new HashMap<>();
 
-   //Create user
+    //Create user
     public User createUser(User user) {
-        users.put(user.username, user);
+        users.put(user.getUsername(), user);
         return user;
     }
 
