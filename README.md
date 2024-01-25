@@ -50,3 +50,6 @@ Create a simple application with Spring Web dependency and test adding gradle.pr
    - Constraints:
      - Only authorized bank employees should have access to this feature.
      - The system should provide a list of all accounts with their respective details, including account numbers, customer names, and current balances.
+     
+# Basics to be practiced before starting for above user stories 
+### Check if the user is already exist in the system 
