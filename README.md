@@ -57,5 +57,11 @@ Create a simple application with Spring Web dependency and test adding gradle.pr
 
 ### Check if the user is already exist in the system
 
-### User Management 
+### User Management
+
+### IoC
+
+Use Case :
+Create new user , check its exist 
+
 
