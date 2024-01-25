@@ -46,10 +46,16 @@ Create a simple application with Spring Web dependency and test adding gradle.pr
      - The system should retrieve the account balance and display it to the customer.
 
 ### Get All Accounts
-   - As a bank employee, I want to be able to retrieve a list of all bank accounts.
-   - Constraints:
-     - Only authorized bank employees should have access to this feature.
-     - The system should provide a list of all accounts with their respective details, including account numbers, customer names, and current balances.
-     
-# Basics to be practiced before starting for above user stories 
-### Check if the user is already exist in the system 
+
+- As a bank employee, I want to be able to retrieve a list of all bank accounts.
+- Constraints:
+    - Only authorized bank employees should have access to this feature.
+    - The system should provide a list of all accounts with their respective details, including account numbers,
+      customer names, and current balances.
+
+# Basics to be practiced before starting for above user stories
+
+### Check if the user is already exist in the system
+
+### User Management 
+

@@ -1,16 +1,19 @@
-package com.fbaron.bankingbackendsb.user;
+package com.fbaron.bankingbackendsb.user.business;
+
 //Add getter setter default and argument constructor
 public class User {
-    String username;
-    String password;
+    private String username;
+    private String password;
 
     public User() {
 
     }
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
+
     public void setUsername(String username) {
         this.username = username;
     }
