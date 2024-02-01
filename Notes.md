@@ -103,12 +103,43 @@ This means that you can add new features or functionality to a system without al
 Subtypes should be substitutable for their base types without altering the correctness of the program.
 If a class is a subtype of another class, it should be able to replace the parent class without affecting the correctness of the program.
 ## Interface Segregation Principle (ISP):
+
 A class should not be forced to implement interfaces it does not use.
-Instead of having a large, monolithic interface, it is better to have smaller, specific interfaces. Classes should implement only the interfaces that are relevant to them.
+Instead of having a large, monolithic interface, it is better to have smaller, specific interfaces. Classes should
+implement only the interfaces that are relevant to them.
+
 ## Dependency Inversion Principle (DIP):
+
 High-level modules should not depend on low-level modules; both should depend on abstractions.
 Abstractions should not depend on details; details should depend on abstractions.
-Dependency injection is a common technique used to implement this principle, allowing the inversion of the flow of control.
+Dependency injection is a common technique used to implement this principle, allowing the inversion of the flow of
+control.
 ========================================================================
 ========================================================================
 ========================================================================
+
+DAO : local adapter -> saving in memory
+Will be changed to InMemoryAdapter --> will not be persited in another data source or file
+
+Inbound —> in data —>
+porting between client and service
+Our client is REST client so controller will be the one
+Outbound—> output (can be another REST , data )
+Porting between service and repository
+
+Inbound or outbound ports must be interfaces and inside the service layer or inside the domain / business layer
+
+More appropriate name for business layer —>
+
+InMemoryAdapter—> The memory is RAM/HEAP memory and will be lost once we
+
+Spring Security —> InMemoryAdapter
+
+Its temporary memory and where
+Testing purpose and spring security user details storing
+
+Mongo —> we will change the data to permanent or persistent data storage
+
+Business will not know the adapter implementation —> abstraction
+
+Each layer is having logic 
