@@ -1,8 +1,7 @@
-package com.fbaron.bankingbackendsb.user.data;
+package com.fbaron.bankingbackendsb.user.data.temp;
 
-import com.fbaron.bankingbackendsb.user.business.User;
-import com.fbaron.bankingbackendsb.user.business.UserRepository;
-import org.springframework.stereotype.Repository;
+import com.fbaron.bankingbackendsb.user.core.User;
+import com.fbaron.bankingbackendsb.user.core.UserRepository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +10,6 @@ import java.util.Map;
 import java.util.Optional;
 
 // Its temp but its repo as its saving and retrival of the data
-@Repository
 public class UserInMemoryAdapter implements UserRepository {
     Map<String, User> users = new HashMap<>();
 

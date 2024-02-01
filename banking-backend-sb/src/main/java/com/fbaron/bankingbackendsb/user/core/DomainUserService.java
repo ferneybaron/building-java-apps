@@ -1,4 +1,4 @@
-package com.fbaron.bankingbackendsb.user.business;
+package com.fbaron.bankingbackendsb.user.core;
 
 import org.springframework.stereotype.Service;
 
@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
-public class UserService implements UserUsecase {
+public class DomainUserService implements UserUsecase {
     //    UserDAO userDAO = new UserDAO();
     private final UserRepository userRepository;
 
-    public UserService(UserRepository userRepository) {
+    public DomainUserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-//Check if user exists ; exception or create user
+    //Check if user exists ; exception or create user
     @Override
     public User createUser(User user) {
         if (Objects.isNull(user.getUsername()) || Objects.isNull(user.getPassword()) || user.getUsername().isBlank() || user.getPassword().isBlank()) {

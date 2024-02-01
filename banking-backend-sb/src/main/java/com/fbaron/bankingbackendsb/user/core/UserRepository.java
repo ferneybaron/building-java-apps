@@ -1,4 +1,4 @@
-package com.fbaron.bankingbackendsb.user.business;
+package com.fbaron.bankingbackendsb.user.core;
 
 import java.util.List;
 import java.util.Optional;

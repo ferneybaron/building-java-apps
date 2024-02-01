@@ -1,4 +1,4 @@
-package com.fbaron.bankingbackendsb.user.business;
+package com.fbaron.bankingbackendsb.user.core;
 
 //Add getter setter default and argument constructor
 public class User {
