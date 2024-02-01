@@ -1,6 +1,7 @@
 package com.fbaron.bankingbackendsb.user.data;
 
 import com.fbaron.bankingbackendsb.user.business.User;
+import com.fbaron.bankingbackendsb.user.business.UserRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 // Its temp but its repo as its saving and retrival of the data
 @Repository
-public class UserDAO implements UserRepository {
+public class UserInMemoryAdapter implements UserRepository {
     Map<String, User> users = new HashMap<>();
 
     //Create user

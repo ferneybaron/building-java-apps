@@ -1,6 +1,4 @@
-package com.fbaron.bankingbackendsb.user.data;
-
-import com.fbaron.bankingbackendsb.user.business.User;
+package com.fbaron.bankingbackendsb.user.business;
 
 import java.util.List;
 import java.util.Optional;

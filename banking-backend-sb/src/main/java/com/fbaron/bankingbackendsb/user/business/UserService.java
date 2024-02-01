@@ -1,6 +1,5 @@
 package com.fbaron.bankingbackendsb.user.business;
 
-import com.fbaron.bankingbackendsb.user.data.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +14,7 @@ public class UserService implements UserUsecase {
         this.userRepository = userRepository;
     }
 
-
+//Check if user exists ; exception or create user
     @Override
     public User createUser(User user) {
         if (Objects.isNull(user.getUsername()) || Objects.isNull(user.getPassword()) || user.getUsername().isBlank() || user.getPassword().isBlank()) {
