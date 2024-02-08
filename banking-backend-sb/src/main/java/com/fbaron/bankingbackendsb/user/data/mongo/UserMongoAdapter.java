@@ -4,10 +4,12 @@ import com.fbaron.bankingbackendsb.user.core.User;
 import com.fbaron.bankingbackendsb.user.core.UserRepository;
 import com.fbaron.bankingbackendsb.user.data.mongo.mapper.UserMongoMapper;
 import com.fbaron.bankingbackendsb.user.data.mongo.repository.UserMongoRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class UserMongoAdapter implements UserRepository {
     // UserMongoRepository is external so needed to inject to use it can't extend
     private final UserMongoRepository userMongoRepository;
