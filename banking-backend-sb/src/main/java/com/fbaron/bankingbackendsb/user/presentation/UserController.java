@@ -1,7 +1,7 @@
 package com.fbaron.bankingbackendsb.user.presentation;
 
-import com.fbaron.bankingbackendsb.user.business.User;
-import com.fbaron.bankingbackendsb.user.business.UserUsecase;
+import com.fbaron.bankingbackendsb.user.core.User;
+import com.fbaron.bankingbackendsb.user.core.UserUsecase;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
